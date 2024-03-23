@@ -2,3 +2,13 @@
 You can add further theme extensions or customizations here if they should
 appear in after the "about" section.
 */}}
+<section class="list">
+        <h5>
+        {{ title (lower .Site.Params.recentPostsTitle) | default "Recent posts" }}
+        </h5>
+    <ul>
+        {{- range .Paginator.Pages -}}
+        {{- .Render "li" -}}
+        {{- end -}}
+    </ul>
+</section>

@@ -1,4 +1,4 @@
-<section class="container centered">
+<section class="container centered vertical">
   <div class="about">
     {{ partialCached "home/avatar.html" . }}
 
@@ -7,5 +7,5 @@
     {{ partialCached "home/social.html" . }}
   </div>
 
-  {{ partialCached "home/extensions.html" . }}
+  {{ partial "home/extensions.html" . }}
 </section>
